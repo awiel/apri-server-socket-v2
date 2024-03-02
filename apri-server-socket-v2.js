@@ -59,7 +59,7 @@ try {
     'transports': [
 //          new winston.transports.Console()
       new winston.transports.DailyRotateFile({
-          filename: 'apri-server-socket-%DATE%.log',
+          filename: 'apri-server-socket-%DATE%-v2.log',
           dirname: '/var/log/aprisensor',
           //datePattern: 'YYYY-MM-DD',
           maxSize: '100m',
