@@ -99,7 +99,7 @@ app.get('/'+apriConfig.systemCode+'/', function(req, res) {
   res.send("ok");
 });
 
-var io = require('socket.io')({path: '/SCAPE604/socket.io'});
+var io = require('socket.io')({path: '/SCAPE605/socket.io'});
 
 logger.info('listening to http://proxyintern: ' + apriConfig.systemListenPort);
 
@@ -293,6 +293,7 @@ io.sockets.on('connection', function (socket) {
 
 });
 
+console.log('listenport: ',apriConfig.systemListenPort )
 io.listen(apriConfig.systemListenPort);
 
 
